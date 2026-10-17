@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Shiva Kant Chaurasiya — freelance web developer building thoughtful websites and web applications for businesses and independent founders. Explore my work and start your project."
+    />
+    <meta name="theme-color" content="#F8FAFC" />
+    <title>Shiva Kant Chaurasiya | Freelance Web Developer</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Keyboard users can skip the navigation and jump straight to the content. -->
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <!-- SECTION 01: NAVIGATION. Each href="#..." points to a section id below. -->
+    <header>
+      <div class="wrap nav">
+        <a class="logo" href="#home" aria-label="Shiva home">shiva<span>.</span></a>
+        <nav id="navigation" aria-label="Main navigation">
+          <a href="#work">Work</a> <a href="#services">Services</a> <a href="#skills">Skills</a>
+          <a href="#about">About</a> <a href="#contact">Contact</a>
+        </nav>
+        <a href="#contact" class="nav-cta">Let’s talk <span aria-hidden="true">↗</span></a>
+        <button class="menu-toggle" aria-controls="navigation" aria-expanded="false" type="button">
+          Menu
+        </button>
+      </div>
+    </header>
+    <main class="wrap" id="main-content">
+      <!-- SECTION 02: HERO. EDIT your availability, headline, introduction, and buttons. -->
+      <div class="hero" id="home">
+        <div class="hero-copy">
+          <div class="availability">
+            <span class="dot" aria-hidden="true"></span>Available for freelance projects
+          </div>
+          <h1>
+            Hi, I’m Shiva.<br />I build websites<br />
+            <em>for your business.</em>
+          </h1>
+          <p class="intro">
+            I’m a <strong>freelance full stack developer.</strong> I turn your ideas into fast,
+            thoughtful websites and web applications that help people understand your business and
+            take the next step.
+          </p>
+          <div class="actions">
+            <a class="btn" href="#contact"
+              >Let’s build your website <span aria-hidden="true">↗</span></a
+            >
+            <a class="btn secondary" href="#work"
+              >Explore my work <span aria-hidden="true">↓</span></a
+            >
+          </div>
+          <div class="hero-motion">
+            <span class="motion-label">I work on</span>
+            <span class="rotating-copy" aria-hidden="true">business websites.</span>
+            <span class="sr-only"
+              >business websites, custom web applications, and landing pages.</span
+            >
+          </div>
+        </div>
+        <!--
+          Interactive introduction demo. Its displayed examples live in app.js (codeExamples).
+          Keep the button IDs, data-language values, and iframe sandbox attributes in place.
+        -->
+        <aside class="live-editor" aria-label="Interactive code examples">
+          <div class="editor-top">
+            <div class="editor-lights" aria-hidden="true"><i></i> <i></i> <i></i></div>
+            <span>Code → Introduction</span> <button type="button" id="copy-code">Copy code</button>
+          </div>
+          <div class="editor-tabs" role="tablist" aria-label="Code language">
+            <button
+              id="tab-js"
+              role="tab"
+              aria-selected="true"
+              aria-controls="code-panel"
+              data-language="javascript"
+            >
+              JavaScript
+            </button>
+            <button
+              id="tab-css"
+              role="tab"
+              aria-selected="false"
+              aria-controls="code-panel"
+              tabindex="-1"
+              data-language="css"
+            >
+              CSS
+            </button>
+            <button
+              id="tab-config"
+              role="tab"
+              aria-selected="false"
+              aria-controls="code-panel"
+              tabindex="-1"
+              data-language="config"
+            >
+              Config
+            </button>
+          </div>
+          <div id="code-panel" role="tabpanel" aria-labelledby="tab-js" tabindex="0">
+            <div class="editor-file">intro/profile.js</div>
+            <pre><code id="code-example"></code></pre>
+          </div>
+          <div class="demo-toolbar">
+            <span>My introduction · live preview</span>
+            <button type="button" id="run-code">Run code <span aria-hidden="true">▶</span></button>
+          </div>
+          <div class="demo-preview">
+            <iframe
+              id="demo-frame"
+              title="Animated introduction: Shiva Kant Chaurasiya"
+              sandbox="allow-scripts"
+            ></iframe>
+          </div>
+          <div class="editor-bottom">
+            <span id="run-status" role="status">Ready to run</span>
+            <span id="copy-feedback" role="status" aria-live="polite"
+              >Copy or run this example.</span
+            >
+          </div>
+        </aside>
+      </div>
+      <!--
+        SECTION 03: PROJECTS. EDIT each title, description, technology tag, and link here.
+        Each data-project number matches an entry in the projects array in app.js:
+        0 = Vistara, 1 = TradeVibe, 2 = Zoom Clone. Update both when adding a project.
+        The mock panels below are CSS illustrations, not actual project screenshots.
+      -->
+      <section id="work" aria-labelledby="work-heading">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Selected work</div>
+            <h2 id="work-heading">Ideas brought to life.</h2>
+          </div>
+          <p>
+            A selection of web applications I’ve built, from rental platforms to real-time video.
+            Take a closer look at how they work.
+          </p>
+        </div>
+        <div class="projects">
+          <!-- PROJECT 0: Vistara. Copy a complete article block to add another card. -->
+          <article class="project">
+            <div class="mock property">
+              <div class="mini">
+                <div class="mini-head"><span>vistara.</span> <span>Explore • Your stays</span></div>
+                <div class="mini-body">
+                  <div class="mini-title">A place to call<br />your next home.</div>
+                  <div class="mini-search">
+                    Location &nbsp; | &nbsp; Check in &nbsp; | &nbsp; Search ↗
+                  </div>
+                  <div class="houses"><i></i> <i></i> <i></i></div>
+                </div>
+              </div>
+              <span class="concept">ILLUSTRATIVE INTERFACE PREVIEW</span>
+            </div>
+            <div class="project-copy">
+              <p class="project-label">Property rental platform</p>
+              <h3>Vistara</h3>
+              <p class="project-summary">
+                Browse rental listings, sign in, and manage property reservations.
+              </p>
+              <div class="tags" aria-label="Technologies used">
+                <span class="tag">React</span> <span class="tag">Node.js</span>
+                <span class="tag">Express</span> <span class="tag">MongoDB</span>
+              </div>
+              <div class="project-actions">
+                <button type="button" data-project="0" aria-label="Read Vistara project details">
+                  Project details ↗
+                </button>
+                <a
+                  href="https://github.com/Shiva21-01"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Shiva’s GitHub profile, opens in a new tab"
+                  >GitHub profile ↗</a
+                >
+              </div>
+            </div>
+          </article>
+          <!-- PROJECT 1: TradeVibe. -->
+          <article class="project">
+            <div class="mock trade">
+              <div class="mini dark">
+                <div class="mini-head">
+                  <span>↗ TradeVibe</span> <span>Overview • Watchlist</span>
+                </div>
+                <div class="mini-body">
+                  <div style="color: #aab6be; font-size: 8px">YOUR MARKET. YOUR PERSPECTIVE.</div>
+                  <div class="mini-title" style="margin-top: 5px">Portfolio overview</div>
+                  <div class="chart">
+                    <svg viewBox="0 0 240 65" role="img" aria-label="Illustrative market trend">
+                      <polyline
+                        points="0,58 20,45 40,51 60,31 80,38 100,21 120,29 140,10 160,22 180,14 200,20 240,2"
+                        fill="none"
+                        stroke="#10B981"
+                        stroke-width="2"
+                      />
+                    </svg>
+                  </div>
+                  <div style="font-size: 7px">
+                    WATCHLIST &nbsp; &nbsp; HOLDINGS &nbsp; &nbsp; ACTIVITY
+                  </div>
+                </div>
+              </div>
+              <span class="concept">ILLUSTRATIVE INTERFACE PREVIEW</span>
+            </div>
+            <div class="project-copy">
+              <p class="project-label">Trading simulation dashboard</p>
+              <h3>TradeVibe</h3>
+              <p class="project-summary">
+                Explore stock charts, manage a watchlist, and track a simulated portfolio.
+              </p>
+              <div class="tags" aria-label="Technologies used">
+                <span class="tag">React</span> <span class="tag">Node.js</span>
+                <span class="tag">MongoDB</span> <span class="tag">Tailwind CSS</span>
+              </div>
+              <div class="project-actions">
+                <button type="button" data-project="1" aria-label="Read TradeVibe project details">
+                  Project details ↗
+                </button>
+                <a
+                  href="https://github.com/Shiva21-01"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Shiva’s GitHub profile, opens in a new tab"
+                  >GitHub profile ↗</a
+                >
+              </div>
+            </div>
+          </article>
+          <!-- PROJECT 2: Zoom Clone. -->
+          <article class="project">
+            <div class="mock video">
+              <div class="mini dark" style="transform: rotate(-3deg)">
+                <div class="mini-head"><span>Team room</span> <span>● Connected</span></div>
+                <div class="meeting">
+                  <div class="person">SK</div>
+                  <div class="person">AM</div>
+                  <div class="person">JD</div>
+                  <div class="person">RK</div>
+                </div>
+                <div class="controls">
+                  ◉ &nbsp; ▣ &nbsp; ⊞ &nbsp; <span style="color: #ff9a94">End call</span>
+                </div>
+              </div>
+              <span class="concept">ILLUSTRATIVE INTERFACE PREVIEW</span>
+            </div>
+            <div class="project-copy">
+              <p class="project-label">Real-time video conferencing</p>
+              <h3>Zoom Clone</h3>
+              <p class="project-summary">
+                Create meeting rooms, connect over video, and manage participants and media.
+              </p>
+              <div class="tags" aria-label="Technologies used">
+                <span class="tag">JavaScript</span> <span class="tag">Node.js</span>
+                <span class="tag">WebRTC</span> <span class="tag">Tailwind CSS</span>
+              </div>
+              <div class="project-actions">
+                <button type="button" data-project="2" aria-label="Read Zoom Clone project details">
+                  Project details ↗
+                </button>
+                <a
+                  href="https://github.com/Shiva21-01"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Shiva’s GitHub profile, opens in a new tab"
+                  >GitHub profile ↗</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- SECTION 04: SERVICES. EDIT the three offers and their included features. -->
+      <section id="services" aria-labelledby="services-heading">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">For businesses & independent founders</div>
+            <h2 id="services-heading">What I can build for you.</h2>
+          </div>
+          <p>
+            From a focused landing page to a custom application, I’ll help you shape the right
+            website for your business.
+          </p>
+        </div>
+        <div class="services">
+          <article class="service">
+            <span class="service-number" aria-hidden="true">01</span>
+            <div class="offer-label">A clear first impression</div>
+            <h3>Landing page</h3>
+            <p>Introduce your offer clearly and give visitors a simple way to get in touch.</p>
+            <ul>
+              <li>One responsive page</li>
+              <li>Contact and inquiry links</li>
+              <li>Basic on-page SEO</li>
+            </ul>
+            <a class="textlink" href="#contact"
+              >Let’s discuss your idea <span aria-hidden="true">↗</span></a
+            >
+          </article>
+          <article class="service">
+            <span class="service-number" aria-hidden="true">02</span>
+            <div class="offer-label">A home for your business</div>
+            <h3>Business website</h3>
+            <p>A thoughtful home for your business, with the information your customers need.</p>
+            <ul>
+              <li>Pages tailored to your business</li>
+              <li>Services and contact sections</li>
+              <li>Responsive layouts and handover</li>
+            </ul>
+            <a class="textlink" href="#contact"
+              >Let’s discuss your idea <span aria-hidden="true">↗</span></a
+            >
+          </article>
+          <article class="service">
+            <span class="service-number" aria-hidden="true">03</span>
+            <div class="offer-label">An idea people can use</div>
+            <h3>Web application</h3>
+            <p>Turn a specific business need into a useful, easy-to-navigate web application.</p>
+            <ul>
+              <li>Features built around your workflow</li>
+              <li>User authentication and APIs</li>
+              <li>Database integration</li>
+            </ul>
+            <a class="textlink" href="#contact"
+              >Let’s discuss your idea <span aria-hidden="true">↗</span></a
+            >
+          </article>
+        </div>
+      </section>
+      <!--
+        SECTION 05: SKILLS. EDIT each category and its skill-token list items.
+        SVG elements draw the small icons. --slide-delay sets the entrance timing.
+      -->
+      <section id="skills" aria-labelledby="skills-heading">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">My toolkit</div>
+            <h2 id="skills-heading">Built with the right tools.</h2>
+          </div>
+          <p>
+            From the interface your customers see to the systems behind it, these are the
+            technologies I work with.
+          </p>
+        </div>
+        <div class="skill-card-grid">
+          <article class="skill-card" style="--slide-delay: 0ms">
+            <div class="skill-card-top">
+              <span class="category-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="3" y="4" width="18" height="16" rx="2" />
+                  <path d="M3 9h18M9 9v11" />
+                </svg>
+              </span>
+              <h3>Frontend</h3>
+            </div>
+            <ul class="skill-token-list">
+              <li class="skill-token">HTML</li>
+              <li class="skill-token">CSS</li>
+              <li class="skill-token">JavaScript</li>
+              <li class="skill-token">React.js</li>
+              <li class="skill-token">Bootstrap</li>
+              <li class="skill-token">Tailwind CSS</li>
+            </ul>
+          </article>
+          <article class="skill-card" style="--slide-delay: 90ms">
+            <div class="skill-card-top">
+              <span class="category-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="3" y="3" width="18" height="7" rx="2" />
+                  <rect x="3" y="14" width="18" height="7" rx="2" />
+                  <path d="M7 6h.01M7 17h.01M12 6h5M12 17h5" />
+                </svg>
+              </span>
+              <h3>Backend</h3>
+            </div>
+            <ul class="skill-token-list">
+              <li class="skill-token">Node.js</li>
+              <li class="skill-token">Express.js</li>
+              <li class="skill-token">REST APIs</li>
+              <li class="skill-token">Python</li>
+              <li class="skill-token">Django</li>
+            </ul>
+          </article>
+          <article class="skill-card" style="--slide-delay: 180ms">
+            <div class="skill-card-top">
+              <span class="category-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <ellipse cx="12" cy="5" rx="8" ry="3" />
+                  <path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0" />
+                </svg>
+              </span>
+              <h3>Databases</h3>
+            </div>
+            <ul class="skill-token-list">
+              <li class="skill-token">MongoDB</li>
+              <li class="skill-token">SQL</li>
+            </ul>
+          </article>
+          <article class="skill-card" style="--slide-delay: 0ms">
+            <div class="skill-card-top">
+              <span class="category-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M8 7h8m-2-3 3 3-3 3M16 17H8m2-3-3 3 3 3" />
+                  <circle cx="5" cy="7" r="2" />
+                  <circle cx="19" cy="17" r="2" />
+                </svg>
+              </span>
+              <h3>DevOps</h3>
+            </div>
+            <ul class="skill-token-list">
+              <li class="skill-token">Docker</li>
+              <li class="skill-token">Kubernetes</li>
+              <li class="skill-token">CI/CD</li>
+            </ul>
+          </article>
+          <article class="skill-card" style="--slide-delay: 90ms">
+            <div class="skill-card-top">
+              <span class="category-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="m5 19 9-9M15 3a5 5 0 0 0-5 6l5 5a5 5 0 0 0 6-5l-3 2-5-5 2-3ZM3 21l3-1-2-2-1 3Z"
+                  />
+                </svg>
+              </span>
+              <h3>Tools</h3>
+            </div>
+            <ul class="skill-token-list">
+              <li class="skill-token">Git</li>
+              <li class="skill-token">GitHub</li>
+              <li class="skill-token">Figma</li>
+              <li class="skill-token">WordPress</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <!-- SECTION 06: ABOUT. EDIT your introduction and the SK monogram here. -->
+      <section id="about" aria-labelledby="about-heading">
+        <div class="about-panel">
+          <div
+            class="portrait-monogram"
+            role="img"
+            aria-label="SK monogram for Shiva Kant Chaurasiya"
+          >
+            <span aria-hidden="true">SK</span>
+            <small aria-hidden="true">SHIVA KANT CHAURASIYA</small>
+          </div>
+          <div class="about-copy">
+            <div class="eyebrow">The person behind the work</div>
+            <h2 id="about-heading">A little about me.</h2>
+            <p>
+              I’m <strong>Shiva Kant Chaurasiya</strong>, a freelance web developer who enjoys
+              turning ideas into useful things on the web.
+            </p>
+            <p>
+              I like making the complicated parts feel simple: clear pages, thoughtful interactions,
+              and the logic that keeps everything working behind the scenes.
+            </p>
+            <p>
+              When we work together, I’ll help you shape the idea, build it carefully, and get it
+              ready to share. Let’s create something that feels right for your business.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION 07: CONTACT. EDIT your invitation text and the visible email link. -->
+      <section id="contact" aria-labelledby="contact-heading">
+        <div class="contact-panel">
+          <div class="contact-copy">
+            <div class="eyebrow">Let’s connect</div>
+            <h2 id="contact-heading">
+              Let’s bring your<br />
+              <em>idea to life.</em>
+            </h2>
+            <p>
+              Tell me a little about your business, what you’d like to build, and when you’d like to
+              launch. We’ll take it from there.
+            </p>
+            <div class="contact-links">
+              <p>For project inquiries</p>
+              <a
+                href="mailto:shivachaurasiya2026@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >shivachaurasiya2026@gmail.com ↗</a
+              >
+            </div>
+          </div>
+          <!--
+            Customer inquiry form. contact.js submits it without opening an email app.
+            If changing the receiving email, update this action, the visible mailto link,
+            contact.js, and contact-setup.html together. The new inbox needs activation.
+            Field names are included in the submitted message; IDs connect labels and scripts.
+          -->
+          <form
+            id="inquiry"
+            method="POST"
+            action="https://formsubmit.co/shivachaurasiya2026@gmail.com"
+          >
+            <div class="form-row">
+              <div>
+                <label for="name">Your name</label>
+                <input
+                  id="name"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                  maxlength="100"
+                  autocomplete="name"
+                />
+              </div>
+              <div>
+                <label for="email">Email address</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  maxlength="254"
+                  placeholder="you@company.com"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+            </div>
+            <label for="service">What can I help you build?</label>
+            <!-- EDIT: These options become the service choice in the inquiry email. -->
+            <select id="service" name="service">
+              <option>Landing page</option>
+              <option>Business website</option>
+              <option>Web application</option>
+              <option>Something else</option>
+            </select>
+            <label for="message">A few details</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="A little about your business, your idea, and your ideal timeline…"
+              required
+              maxlength="4000"
+            ></textarea>
+            <!-- Hidden spam-trap field: real visitors leave this empty. Keep it hidden. -->
+            <div class="form-trap" aria-hidden="true">
+              <label for="website">Leave this field empty</label>
+              <input id="website" name="_honey" type="text" tabindex="-1" autocomplete="off" />
+            </div>
+            <!-- Enabled by contact.js after the submit handler is ready. -->
+            <button class="btn" id="send-inquiry" type="submit" disabled>
+              Send message <span aria-hidden="true">↗</span>
+            </button>
+            <p class="small">Send your project details here. I’ll reply to your email.</p>
+            <noscript>
+              <p class="small">Please enable JavaScript to send your message from this page.</p>
+            </noscript>
+            <!-- JavaScript writes progress/errors here; aria-live announces them accessibly. -->
+            <p
+              id="form-status"
+              class="small form-status"
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+              tabindex="-1"
+            ></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <div class="wrap">
+      <!-- SECTION 08: FOOTER. app.js fills in the current year automatically. -->
+      <footer>
+        <div>© <span id="year"></span> Shiva Kant Chaurasiya</div>
+        <div class="links">
+          <button type="button" class="motion-toggle" aria-pressed="false">Motion: on</button>
+          <a href="#home">Back to top ↑</a>
+        </div>
+      </footer>
+    </div>
+    <!-- Project popup: app.js fills these empty elements from the projects array. -->
+    <dialog id="project-dialog" aria-labelledby="dialog-title">
+      <button type="button" class="close" aria-label="Close project details">Close ×</button>
+      <div class="eyebrow">Project overview</div>
+      <h2 id="dialog-title"></h2>
+      <p id="dialog-description"></p>
+      <ul id="dialog-features"></ul>
+      <div class="tags" id="dialog-tags"></div>
+      <a
+        class="textlink"
+        href="https://github.com/Shiva21-01"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Visit my GitHub profile ↗</a
+      >
+    </dialog>
+    <!--
+      Load scripts after the HTML so they can find the elements above.
+      Contact runs first and is separate from the optional visual interactions.
+    -->
+    <script src="./contact.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
