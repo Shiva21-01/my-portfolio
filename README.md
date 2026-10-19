@@ -1,5 +1,10 @@
 # 🚀 Personal Portfolio Website
-A modern, responsive, and interactive personal portfolio website built to showcase my web development skills, background, and projects. 
+A modern, responsive, and interactive personal portfolio website built to showcase my web development skills, background, and projects.
+
+* **Personal Portfolio**
+  Clean, responsive developer portfolio showcasing frontend and full-stack projects.
+  * Live Demo: [shiva21-01.github.io/my-portfolio](https://shiva21-01.github.io/my-portfolio/)
+
 
 ## ✨ Features
 
