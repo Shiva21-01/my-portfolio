@@ -1,0 +1,97 @@
+<!doctype html>
+<!--
+  FILE: contact-setup.html
+  HTML contains the page content and structure.
+  Search for EDIT comments to find the main customization points.
+  Keep id, class, name, and data-* attributes unless you also update the
+  matching CSS selectors and JavaScript. See BEGINNER-GUIDE.md in the ZIP.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Ask search engines not to index this utility page. This is not a login gate. -->
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Activate contact form | Shiva Kant Chaurasiya</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- Page-specific styling follows the shared theme. -->
+    <link rel="stylesheet" href="./contact-setup.css" />
+  </head>
+  <body>
+    <main class="setup-wrap">
+      <div class="setup-nav">
+        <a class="logo" href="./index.html">shiva<span>.</span></a>
+        <a href="./index.html#contact">Back to contact form ↗</a>
+      </div>
+      <div class="setup-card">
+        <div class="eyebrow">One-time setup for the portfolio owner</div>
+        <h1>Activate your<br />contact form.</h1>
+        <p>
+          FormSubmit needs you to verify the inbox that will receive your website inquiries. This
+          step is for you, the portfolio owner.
+        </p>
+        <ol>
+          <li>
+            <strong>Request the activation email.</strong> <br />The button below opens FormSubmit
+            in a new tab. Complete any verification it shows.
+          </li>
+          <li>
+            <strong>Confirm your inbox.</strong> <br />Search your Inbox and Spam for “FormSubmit”,
+            open the activation email, and click <strong>Activate Form</strong>.<span
+              class="setup-inbox"
+              >shivachaurasiya2026@gmail.com</span
+            >
+          </li>
+          <li>
+            <strong>Check delivery.</strong> <br />Return to the portfolio, send one test inquiry,
+            and check that it arrives in your inbox.
+          </li>
+        </ol>
+        <!--
+          OWNER SETUP ONLY: this normal HTML POST happens when you click the button.
+          It opens FormSubmit in a new tab so you can complete provider verification.
+          EDIT the receiving email here and in index.html/contact.js together.
+          Keep the provider's default verification enabled. No email is sent on page load.
+        -->
+        <form
+          id="activation-form"
+          action="https://formsubmit.co/shivachaurasiya2026@gmail.com"
+          method="POST"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <input type="hidden" name="name" value="Shiva portfolio setup" />
+          <input type="hidden" name="email" value="shivachaurasiya2026@gmail.com" />
+          <input
+            type="hidden"
+            name="message"
+            value="One-time owner setup for direct contact-form delivery on the portfolio website."
+          />
+          <input type="hidden" name="_subject" value="Portfolio contact form activation" />
+          <input type="hidden" name="_template" value="table" />
+          <!-- contact-setup.js sets _url to the same hosted folder used by contact.js. -->
+          <input
+            id="activation-url"
+            type="hidden"
+            name="_url"
+            value="https://shiva-kant-portfolio.shrewdanole.chatgpt.site/"
+          />
+          <button class="btn" id="request-activation" type="submit">
+            Request activation email <span aria-hidden="true">↗</span>
+          </button>
+        </form>
+        <!-- Status explains the next step; it does not claim inbox activation succeeded. -->
+        <p id="setup-status" role="status" aria-live="polite"></p>
+        <p class="small">
+          Already clicked Activate Form?
+          <a class="textlink" href="./index.html#contact">Test the contact form ↗</a>
+        </p>
+        <p class="setup-note">
+          After activation, customers can send inquiries directly from the portfolio. They won’t
+          need to open an email app or complete this owner setup.
+        </p>
+      </div>
+    </main>
+    <script src="./contact-setup.js"></script>
+  </body>
+</html>

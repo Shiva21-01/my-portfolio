@@ -1,0 +1,82 @@
+/*
+ * CONTACT ACTIVATION PAGE
+ * Loaded after styles.css, so the main theme variables and .btn styles are shared.
+ * Change this file only for the layout of contact-setup.html.
+ */
+
+/* Page width and top navigation. */
+.setup-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 40px 24px 70px;
+}
+.setup-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 42px;
+}
+.setup-nav > a:last-child {
+  font-size: 13px;
+  color: var(--muted);
+}
+.setup-card {
+  padding: clamp(24px, 5vw, 44px);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #ffffffbd;
+  box-shadow: 0 18px 48px #18365a08;
+}
+.setup-card h1 {
+  font-size: clamp(32px, 6vw, 46px);
+  letter-spacing: -1.6px;
+  line-height: 1.15;
+  margin: 15px 0 18px;
+}
+.setup-card > p,
+.setup-card li {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+.setup-card ol {
+  padding-left: 22px;
+  margin: 25px 0 30px;
+  display: grid;
+  gap: 16px;
+}
+.setup-card strong {
+  color: var(--ink);
+}
+.setup-inbox {
+  display: block;
+  overflow-wrap: anywhere;
+  color: var(--accent);
+  font-size: 14px;
+  margin-top: 5px;
+}
+.setup-card .btn {
+  width: 100%;
+  margin-bottom: 8px;
+}
+.setup-note {
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+  margin-top: 25px;
+}
+#setup-status {
+  margin-top: 16px;
+  font-size: 13px;
+  color: #065f46;
+}
+@media (max-width: 450px) {
+  .setup-nav {
+    align-items: start;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .setup-wrap {
+    padding: 25px 18px 45px;
+  }
+}
